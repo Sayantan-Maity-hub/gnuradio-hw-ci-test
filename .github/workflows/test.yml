@@ -1,15 +1,13 @@
-</> YAML
-
 name: Test CI Trigger
 
 on:
-  pull_request:
   push:
+  pull_request:
 
 jobs:
   test:
-    runs-on: ubontu-latest
+    runs-on: ubuntu-latest
 
     steps:
-      -name: Print message
-       run: echo "CI Trigger Works"
+      - name: Print message
+        run: echo "CI Trigger Works"
