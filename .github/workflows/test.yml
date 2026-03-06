@@ -1,0 +1,15 @@
+</> YAML
+
+name: Test CI Trigger
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  test:
+    runs-on: ubontu-latest
+
+    steps:
+      -name: Print message
+       run: echo "CI Trigger Works"
