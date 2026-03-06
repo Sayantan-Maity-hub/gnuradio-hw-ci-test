@@ -1,4 +1,4 @@
-name: Test CI Trigger
+name: CI Trigger Test
 
 on:
   push:
@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: Print message
-        run: echo "CI Trigger Works"
+        run: echo "CI is working!"
